@@ -23,7 +23,7 @@ typedef struct User {
     struct User *next;
 } User;
 
-User *users = NULL;
+extern User *users;
 
 User *create_user(const char *name);
 User *find_user(User *users, const char *name);
